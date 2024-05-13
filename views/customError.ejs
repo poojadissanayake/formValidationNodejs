@@ -1,0 +1,19 @@
+<%- include('header'); -%>
+
+    <header>
+        <div class="container-fluid bg-info-subtle mb-4">
+            <div class="col-sm-8 mx-auto text-center py-2">
+                <h1 class="display-4">World of Ice Cream</h1>
+                <p class="lead ">Feedback from ice cream lovers....</p>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Missing <%= missing %>?</h2>
+        <br>
+        <p>There was a problem with the data you supplied in the form.</p>
+        <br>
+        <p class="fs-5 fw-bold">Error in form field: <span class="text-danger"><%= errorDesc %></span></p>
+    </div>
+
+<%- include('footer'); -%>
